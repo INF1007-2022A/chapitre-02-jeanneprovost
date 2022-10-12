@@ -1,8 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 def majuscule(mot):
-    # TODO completer la fonction ici
-    return mot
+    mot_majuscule = ""
+    for lettre in mot:
+        if ord(lettre) >= 96:
+            mot_majuscule += chr(ord(lettre)-32)
+        else:
+            mot_majuscule += lettre
+    return mot_majuscule
 
 
 if __name__ == '__main__':
